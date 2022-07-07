@@ -1,0 +1,36 @@
+ :root {
+     --white: #FFFFFF;
+     --black: #000000;
+     --very-light-pink: #c7c7c7;
+     --text-input-field: #f7f7f7;
+     --hospital-green: #acd9b2;
+     --sm: 14px;
+     --md: 16px;
+     --lg: 18px;
+ }
+
+.cards-calculator {
+    background-color: var(--text-input-field);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 25px;
+}
+ 
+.forms {
+    width: 300px;
+    height: auto;
+    display: grid;  
+}
+
+.forms button {
+    height: 30px;
+    color: var(--white);
+    background: var(--hospital-green);
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: var(--md);
+}
