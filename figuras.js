@@ -123,9 +123,6 @@ function calcularPerimetroTriangulo() {
     console.log(perimetro)
 }
 
-
-
-
 function calcularAreaTriangulo() {
     const base  = document.getElementById("InputBase2");
     const altura = document.getElementById("InputAltura");
@@ -140,4 +137,42 @@ function calcularAreaTriangulo() {
     alert("El area de tu triangulo es " + area + "cm")
     
 }
+
+//Funciones para el circulo
+function calcularDiametroCirculo () {
+    const radio = document.getElementById("InputCirculo");
+    const input = radio.value;
+
+    const diametro = diametroCirculo(input);
+    alert("El diametro de tu circulo es: " + diametro + " cm")
+}
+
+function calcularPerimetroCirculo() {
+    const radio = document.getElementById("InputCirculo");
+    const input = radio.value;
+
+    const perimetro = perimetroCirculo(input);
+    //const resultado = parseInt(perimetro); opcional por si deseamos redondear el resulado a un entero //
+    alert("El perimetro de tu circulo es: " + resultado + " cm")
+}
+
+function calcularAreaCirculo() {
+    const radio = document.getElementById("InputCirculo");
+    const input = radio.value;
+
+    const area = areaCirculo(input);
+    alert("El diametro de tu circulo es: " + area + " cm")
+}
+
+function alturaIscoceles (lado1, lado2, base) {
+    if (lado1 === lado2) {
+        const altura = Math.sqrt( (Math.pow(lado1 , 2)) - (Math.pow(base,2) / 4 ) );
+        alert("La altura de tu triangulo iscoceles es " + altura + " cm" );
+    }else {
+        alert("Las medidas ingresadas no corresponden a un triangulo iscoceles");
+    }
+}
+
+
+
 
