@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+}
+
+header {
+    padding: 15px;
+    color: white;
+    display: grid;   
+    place-items: center;
+background-image: linear-gradient(to right top, #cc70da, #b676db, #a07ada, #8b7dd6, #787fcf);
+}
+
+header p {
+    margin: 0;
+}
+
+.imagen {
+    width: 400px;  
+}
+
+.forms {
+    display: grid;
+    width: 350px;
+}
+
+.forms label {
+    margin-top: 20px;
+}
+
+.forms input {
+    margin-top: 15px;
+    border-radius: 15px;
+    height: 30px;
+    border: none;
+    padding-left: 15px;
+}
+
+.forms input::placeholder {
+    color: #8b7dd6;
+    font-weight: 700;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+section h2 {
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #FF869E;
+
+}
+
+button {
+    margin-top: 15px;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background: #E8A0BF;
+}
+
+#ResultP {
+    color: white;
+    margin-top: 20px;
+    font-weight: 700;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.cupon-img {
+    width: 450px;
+    height: 150px;
+    object-fit: cover;
+}
