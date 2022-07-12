@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./descuentos.css">
 </head>
 <body>
-    <header>
+    <section>
         <div>
             <h1>La diversion esta mas cerca de lo que esperabas</h1>
             <p>Aprovecha estas increibles ofertas</p>
@@ -25,18 +25,12 @@
             <p id="ResultP" ></p>    
 
             <h2>Recuerda que tambien puedes canjear tu cupon de Descuento </h2>
-            <input id="InputCupon" type="number" placeholder="Ingresa el nombre de tu cupon" />
-
-        
+            <input id="InputCupon" type="text" placeholder="Ingresa el nombre de tu cupon" />
+            <button type="button" onclick="(cuponDiscount())">Canjea tu cupon</button>
+            <p id="ResultCupon"></p>
         </form>
-
-    </header>
-    <img class="cupon-img" src="" alt="cupon">
-
-    <section>
-        
-
     </section>
+    
 
     <script src="descuentos.js"></script>
 </body>

@@ -2,20 +2,27 @@ body {
     margin: 0;
 }
 
-header {
+section {
     padding: 15px;
     color: white;
     display: grid;   
     place-items: center;
+    height: auto;
 background-image: linear-gradient(to right top, #cc70da, #b676db, #a07ada, #8b7dd6, #787fcf);
+
 }
 
-header p {
+section > div {
+    width: 350px;
+}
+
+
+section p {
     margin: 0;
 }
 
 .imagen {
-    width: 400px;  
+    width: 350px;  
 }
 
 .forms {
@@ -38,16 +45,6 @@ header p {
 .forms input::placeholder {
     color: #8b7dd6;
     font-weight: 700;
-}
-
-section {
-    display: grid;
-    place-items: center;
-    width: 100%;
-}
-
-section h2 {
-    font-size: 20px;
 }
 
 button:hover {
@@ -74,8 +71,3 @@ button {
     font-size: 20px;
 }
 
-.cupon-img {
-    width: 450px;
-    height: 150px;
-    object-fit: cover;
-}
