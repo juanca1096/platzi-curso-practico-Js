@@ -63,7 +63,7 @@ button {
     background: #E8A0BF;
 }
 
-#ResultP {
+#ResultP, #ResultCupon {
     color: white;
     margin-top: 20px;
     font-weight: 700;

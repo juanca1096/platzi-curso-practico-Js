@@ -27,21 +27,23 @@ function priceDiscount() {
     const resultP = document.getElementById("ResultP");
     resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
     
+    return(precioConDescuento);
 }
 
 function cuponDiscount () {
     const inputCupon = document.getElementById("InputCupon");
     const cuponValue = inputCupon.value;
-
     const cupon = document.getElementById("ResultCupon");
+    
+    const precioInicial = priceDiscount();
     
     switch (cuponValue) {
         case "verano":
-        const precioCupon = calcularPrecioConDescuento(resultado, 15);
+        const precioCupon = calcularPrecioConDescuento(precioInicial, 15);
         cupon.innerText =  "Tu precio con el cupon es de: $" + precioCupon;
         break;
         default:
             alert("Cupon no encontrado");
         
-    }
+    } 
 }
