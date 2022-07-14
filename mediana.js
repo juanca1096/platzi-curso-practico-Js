@@ -1,4 +1,6 @@
-function calcularMediaAritmetica (lista) {
+function calcularMediana () {
+ 
+    function calcularMediaAritmetica (lista) {
    const sumaLista = lista.reduce (
         function (valorAcumulado = 0, nuevoElemento) {
             return valorAcumulado + nuevoElemento;
@@ -11,16 +13,19 @@ function calcularMediaAritmetica (lista) {
     
 }
 
-const lista1 = [
-    100,
-    200,
-    500,
-    40000000
-];
+    const inputLista = document.getElementById("InputLista");
+    const inputValue = inputLista.value 
+    
+    let lista = inputValue;
+    let lista1 = lista.split(',').map(i=>Number(i));
+    
+    console.log(lista1);
 
-const  mitadLista1 = parseInt(lista1.length / 2);
+    lista1.sort((a,b) => a-b);
 
-function esPar(numerito) {
+    const  mitadLista1 = parseInt(lista1.length / 2);
+
+function esPar(numerito) { //funcion para saber si un numero es par. Con el residuo de la division
     if (numerito % 2 === 0) {
         return true;
     }else {
@@ -42,4 +47,9 @@ if (esPar(lista1.length)) {
     mediana = promedioElemento1y2;
 }else {
     mediana = lista1[mitadLista1];
+}
+
+    const resultado = document.getElementById("ResulLista");
+    resultado.innerText = "Tu mediana es : $" + mediana;
+
 }

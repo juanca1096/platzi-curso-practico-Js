@@ -11,7 +11,7 @@ function calcularMediaAritmetica (lista) {
             return valorAcumulado + nuevoElemento;
         }
     );
-    
+    console.log(lista);
     console.log(sumaLista);
 
     const promedioLista = sumaLista / lista.length;
