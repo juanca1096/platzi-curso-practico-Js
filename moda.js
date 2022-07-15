@@ -1,20 +1,14 @@
-const lista1 =  [
-    1,
-    2,
-    3,
-    5,
-    10,
-    20,
-    30,
-    1,
-    2,
-    1,
-    30
-];
+function calcularModa (){
 
-const lista1Count = {
+const inputLista = document.getElementById("InputLista");
+const valueLista = inputLista.value;    
 
-};
+
+const lista = valueLista;
+
+const lista1 = lista.split(",").map(i => Number(i));
+
+const lista1Count = {};
 
 lista1.map(
     function(i) {
@@ -25,3 +19,18 @@ lista1.map(
         }
     }
 );
+
+const lista1Array = Object.entries(lista1Count).sort(
+    function (elementoA, elementoB) {
+        return elementoA[1] - elementoB[1];
+    }
+);
+
+const modaArray = lista1Array[lista1Array.length - 1]; //usamos el -1, recordando que empezamos a contar desde 0.
+const moda = modaArray.pop();
+
+const inputModa = document.getElementById("ResultModa");
+inputModa.innerText = "La moda de tu lista es: $" + modaArray;
+
+}
+
